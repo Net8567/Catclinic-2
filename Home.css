@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    background-color: white;
+
+}
+
+header {
+    background-color: rgb(39, 40, 57);
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 150px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(39, 40, 57);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    padding: 200px 20px 20px;
+    text-align: center;
+}
+
+#intro {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#intro img {
+    width: 100%;
+    height: auto;
+}
+
+#store-promo, #appointment-promo {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#store-promo .store-text, #appointment-promo .appointment-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+#store-promo img, #appointment-promo img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2f4f4f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #556b2f;
+}
+.greeting {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.greeting img {
+    width: 100%;
+    height: auto;
+}
+
+.greeting::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s;
+    font-size: 2em;
+    z-index: 2;
+}
+
+.tinted::after {
+    opacity: 0.5;
+}
+
+.tinted .welcome-text {
+    opacity: 1;
+}
+.language-toggle {
+    display: flex;
+    align-items: right;

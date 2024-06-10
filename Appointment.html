@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Clinic - Appointment</title>
+    <link rel="stylesheet" href="Appointment.css">
+    <script src="Appointment.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="Cat%20clinic%20Logo.png" alt="Cat Clinic Logo">
+        <h1>Cat Clinic</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li><a href="Appointment.html">Appointment</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="appointment-container">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="cat-name">Cat's Name:</label>
+                <input type="text" id="cat-name" name="cat-name">
+            </div>
+            <div class="form-group">
+                <label for="cat-age">Cat's Age:</label>
+                <input type="text" id="cat-age" name="cat-age">
+            </div>
+            <div class="form-group">
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="Regular Check-up">Regular Check-up</option>
+                    <option value="Vaccination">Vaccination</option>
+                    <option value="Grooming">Grooming</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="appointment-time">Preferred Appointment Time:</label>
+                <input type="datetime-local" id="appointment-time" name="appointment-time" required>
+            </div>
+            <div class="form-group">
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="confirmation-message" class="hidden">Appointment booked successfully! We will reach out to you soon.</div>
+    </section>
+</main>
+
+<footer>
+    <p>Created by Golikov Nikita, BDA-2303</p>
+    <p>This is not a real site. Made for demonstration purposes.</p>
+    <div class="language-toggle">
+        <a href="Zapis.html" >English / Русский</a>
+    </div>
+</footer>
+</body>
+</html>

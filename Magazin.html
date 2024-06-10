@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Clinic - Store</title>
+    <link rel="stylesheet" href="Store.css">
+    <script defer src="Store.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="Cat%20clinic%20Logo.png" alt="Cat Clinic Logo">
+        <h1>Cat Clinic</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Dom.html">Главная</a></li>
+            <li><a href="Magazin.html">Магазин</a></li>
+            <li><a href="Zapis.html">Запись на приём</a></li>
+            <li><a href="Onas.html">О нас</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+</header>
+
+<button id="cart-button">Корзина</button>
+
+<main>
+    <section class="store-container">
+        <div class="product-row">
+            <div class="product-card">
+                <img src="https://magdog.ru/image/cache/catalog/Market/zakorma/zkr-kg35-800x800.jpg" alt="Product 1">
+                <h3>Сухой корм</h3>
+                <div class="product-info">
+                    <span class="price">3'000₸</span>
+                    <button class="btn add-to-cart" data-product="Dry food" data-price="3000">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/04/38/83a6a2bf148570fb29cdecbecfdd.jpg" alt="Product 2">
+                <h3>Влажный корм</h3>
+                <div class="product-info">
+                    <span class="price">100₸</span>
+                    <button class="btn add-to-cart" data-product="Wet food" data-price="100">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.satu.kz/157746582_w600_h600_157746582.jpg" alt="Product 3">
+                <h3>Наполнитель</h3>
+                <div class="product-info">
+                    <span class="price">2'900₸</span>
+                    <button class="btn add-to-cart" data-product="Litter" data-price="2900">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://biostyle.biz/upload/iblock/a64/b9dwlm68dpiplnm7njvw2djb5z7mw2p5.jpg" alt="Product 4">
+                <h3>Капли от клещей и блох</h3>
+                <div class="product-info">
+                    <span class="price">3'500₸</span>
+                    <button class="btn add-to-cart" data-product="Drops from ticks and fleas" data-price="3500">In Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="https://ir-3.ozone.ru/s3/multimedia-5/c1000/6749654693.jpg" alt="Product 5">
+                <h3>Домики</h3>
+                <div class="product-info">
+                    <span class="price">25'000₸</span>
+                    <button class="btn add-to-cart" data-product="Cat hut" data-price="25000">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://ir.ozone.ru/s3/multimedia-e/c1000/6629146070.jpg" alt="Product 6">
+                <h3>Когтеточки</h3>
+                <div class="product-info">
+                    <span class="price">4'000₸</span>
+                    <button class="btn add-to-cart" data-product="Scratching post" data-price="4000">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://zveryatam.ru/images/products/e5/50/product_img_21385.jpg" alt="Product 7">
+                <h3>Игрушка мышь</h3>
+                <div class="product-info">
+                    <span class="price">990₸</span>
+                    <button class="btn add-to-cart" data-product="Mouse toy" data-price="990">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://zoocity.kz/sites/default/files/vayavyvy_0.jpg" alt="Product 8">
+                <h3>Сухой шампунь</h3>
+                <div class="product-info">
+                    <span class="price">3'000₸</span>
+                    <button class="btn add-to-cart" data-product="Dry shampoo" data-price="3000">In Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="https://ir-3.ozone.ru/s3/multimedia-j/c1000/6366068035.jpg" alt="Product 9">
+                <h3>Переноска</h3>
+                <div class="product-info">
+                    <span class="price">8'300₸</span>
+                    <button class="btn add-to-cart" data-product="Сarrier" data-price="8300">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://mi29.ru/image/cache/cache/2001-3000/2646/main/6034-102678-0-1-800x800.jpg" alt="Product 10">
+                <h3>Миски</h3>
+                <div class="product-info">
+                    <span class="price">12'500₸</span>
+                    <button class="btn add-to-cart" data-product="Bowls" data-price="12500">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://ir.ozone.ru/s3/multimedia-o/c1000/6078167724.jpg" alt="Product 11">
+                <h3>Шлейка</h3>
+                <div class="product-info">
+                    <span class="price">3'200₸</span>
+                    <button class="btn add-to-cart" data-product="Harness" data-price="3200">In Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://st34.stblizko.ru/images/product/429/566/015_big.jpg" alt="Product 12">
+                <h3>Витамины</h3>
+                <div class="product-info">
+                    <span class="price">950₸</span>
+                    <button class="btn add-to-cart" data-product="Vitamins" data-price="950">In Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="cart-popup" class="cart-popup">
+    <div class="cart-header">
+        <h2>Корзина</h2>
+        <button id="close-cart">&times;</button>
+    </div>
+    <ul id="cart-items">
+    </ul>
+    <div class="cart-total">
+        Total: ₸<span id="cart-total">0</span>
+    </div>
+</div>
+
+<footer>
+    <p>Онлайн магазин пока недоступен. Он сделан для вышего удобства.</p>
+    <p>Создано Golikov Nikita, BDA-2303</p>
+    <p>Это не настоящий сайт. Создан для демонстрации.</p>
+    <div class="language-toggle">
+        <a href="Store.html" >English / Русский</a>
+    </div>
+</footer>
+</body>
+</html>
